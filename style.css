@@ -29,8 +29,8 @@ h2{
 .allcontent{
     display: flex;
     flex-direction: column;
-    width: 45%;
-    height: 50vh;
+    width: 600px;
+    height: 340px;
     position: fixed;
     top:50%;
     left: 50%;
