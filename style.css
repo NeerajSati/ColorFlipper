@@ -1,0 +1,30 @@
+body{
+    background-color: white;
+}
+
+.navDiv{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-content:center ;
+}
+.btn{
+    border-radius: 6px;
+    background-color: rgb(124, 0, 0);
+    color: white;
+    display: flex;
+    align-content: center;
+}
+
+.btn-txt{
+    margin: 10px;
+    margin-left:30px;
+    margin-right:30px;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
