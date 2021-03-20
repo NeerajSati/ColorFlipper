@@ -2,7 +2,8 @@ const btn = document.querySelector('.btn');
 const btnrgb = document.querySelector('.btnrgb');
 const color=document.querySelector('.color');
 const submit= document.querySelector('.submit');
-let prevcolor = "white";
+document.body.style.backgroundColor='white';
+prevcolor='white';
 const hex = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"]
 
 btn.addEventListener("click",function(){
@@ -10,6 +11,7 @@ let hexcolor = "#";
 for(let i=0;i<6;i++){
     hexcolor += hex[getRandom()];
 }
+prevcolor=hexcolor;
 color.textContent = hexcolor;
 document.body.style.backgroundColor = hexcolor;
 });
@@ -22,14 +24,15 @@ btnrgb.addEventListener("click",function(){
     }
     rgbcolor += rgbRandom();
     rgbcolor += ")";
+    prevcolor=rgbcolor;
     color.textContent = rgbcolor;
     document.body.style.backgroundColor = rgbcolor;
     });
-
+    
 submit.addEventListener("click",function(){
     let txtcolor = document.getElementById("userip").value;
         document.body.style.backgroundColor = txtcolor;
-        if(document.body.style.backgroundColor == prevcolor)
+        if(document.body.style.backgroundColor != txtcolor)
         {
             alert('Oops!! You Entered a wrong input')
             color.textContent = prevcolor;
