@@ -2,7 +2,7 @@ const btn = document.querySelector('.btn');
 const btnrgb = document.querySelector('.btnrgb');
 const color=document.querySelector('.color');
 const submit= document.querySelector('.submit');
-let prevcolor;
+let prevcolor = "white";
 const hex = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"]
 
 btn.addEventListener("click",function(){
@@ -28,7 +28,6 @@ btnrgb.addEventListener("click",function(){
 
 submit.addEventListener("click",function(){
     let txtcolor = document.getElementById("userip").value;
-        prevcolor=document.body.style.backgroundColor;
         document.body.style.backgroundColor = txtcolor;
         if(document.body.style.backgroundColor == prevcolor)
         {
